@@ -1,7 +1,11 @@
-import { Button } from "./components/ui/button"
-import { Card } from "./components/ui/card"
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import useFetch from "@/hooks/useFetch";
+
 
 function App() {
+  const url = useFetch("hello");
+  console.log(url)
 
   return (
     <div>
